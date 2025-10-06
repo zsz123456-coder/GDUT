@@ -1588,7 +1588,7 @@ renderGallery();
         }
         
     } catch (error) {
-        console.error('加载图片数据异常:', error);
+console.error('加载图片数据异常:', error);
         loadGalleryFromLocalStorage();
     }
 }
@@ -1876,11 +1876,18 @@ async function handleRegister(event) {
     const email = document.getElementById('registerEmail')?.value;
     const password = document.getElementById('registerPassword')?.value;
     const confirmPassword = document.getElementById('confirmPassword')?.value;
+    const activationCode = document.getElementById('activationCode')?.value;
     
-    console.log('表单数据:', { email, password, confirmPassword });
+    console.log('表单数据:', { email, password, confirmPassword, activationCode });
     
-    if (!email || !password || !confirmPassword) {
+    if (!email || !password || !confirmPassword || !activationCode) {
         alert('请填写所有字段');
+        return;
+    }
+    
+    // 验证激活码
+    if (activationCode !== 'GDUT-PINEAPPLE') {
+        alert('注册失败：激活码不正确');
         return;
     }
     
