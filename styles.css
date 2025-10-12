@@ -83,7 +83,7 @@ body {
 /* 用户菜单样式 */
 .user-menu {
     display: flex;
-    align-items: center;
+align-items: center;
     gap: 1rem;
 }
 
@@ -118,7 +118,7 @@ body {
 
 /* 模态框样式 */
 .modal {
-    display: none;
+display: none;
     position: fixed;
     z-index: 2000;
     left: 0;
@@ -130,7 +130,7 @@ body {
 
 .modal-content {
     background-color: white;
-    margin: 10% auto;
+margin: 10% auto;
     padding: 2rem;
     border-radius: 10px;
     width: 90%;
@@ -160,7 +160,7 @@ body {
 
 /* 表单样式 */
 .form-group {
-margin-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .form-group label {
@@ -346,9 +346,9 @@ margin-bottom: 1.5rem;
     padding: 15px 30px;
     font-size: 1.1rem;
     border-radius: 50px;
-cursor: pointer;
+    cursor: pointer;
     transition: all 0.3s;
-font-weight: 600;
+    font-weight: 600;
 }
 
 .cta-button:hover {
@@ -380,142 +380,13 @@ font-weight: 600;
     border-radius: 2px;
 }
 
-/* 果园介绍 - 使用background1.png作为背景 */
+/* 果园介绍 */
 .orchard-section {
-    background: url('background1.png') center/cover no-repeat;
-    position: relative;
-}
-
-.orchard-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(255, 255, 255, 0.3); /* 降低遮罩透明度，让背景图更清晰 */
-    z-index: 1;
-}
-
-.orchard-section .container {
-    position: relative;
-    z-index: 2;
-}
-
-/* 生长过程 - 使用background2.png作为背景 */
-.growth-section {
-    background: url('background2.png') center/cover no-repeat;
-    position: relative;
-}
-
-.growth-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(241, 248, 233, 0.3); /* 降低遮罩透明度 */
-    z-index: 1;
-}
-
-.growth-section .container {
-    position: relative;
-    z-index: 2;
-}
-
-/* 产品信息 - 使用background3.png作为背景 */
-.product-section {
-    background: url('background3.png') center/cover no-repeat;
-    position: relative;
-}
-
-/* 产品信息 - 使用绿色背景 */
-.product-section {
-    background: #4CAF50; /* 绿色背景 */
-    position: relative;
-}
-
-.product-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(255, 255, 255, 0.3); /* 降低遮罩透明度 */
-    z-index: 1;
-}
-
-.product-section .container {
-    position: relative;
-    z-index: 2;
-}
-
-/* 团队介绍 - 使用background2.png作为背景（循环使用） */
-.team-section {
-    background: url('background2.png') center/cover no-repeat;
-    position: relative;
-}
-
-.team-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(232, 245, 233, 0.3); /* 降低遮罩透明度 */
-    z-index: 1;
-}
-
-.team-section .container {
-    position: relative;
-    z-index: 2;
-}
-
-/* 图片展示区域 - 使用background2.png作为背景（循环使用） */
-.gallery-section {
-    background: url('background2.png') center/cover no-repeat;
-    position: relative;
-}
-
-.gallery-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(255, 248, 225, 0.3); /* 降低遮罩透明度 */
-    z-index: 1;
-}
-
-.gallery-section .container {
-    position: relative;
-    z-index: 2;
-}
-
-/* 幻灯片区域 - 使用background3.png作为背景（循环使用） */
-.slideshow-section {
-    background: url('background3.png') center/cover no-repeat;
-    position: relative;
-}
-
-.slideshow-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(240, 147, 251, 0.1); /* 保持较低的透明度，保留原有渐变效果 */
-    z-index: 1;
-}
-
-.slideshow-section .container {
-    position: relative;
-    z-index: 2;
+    background: url('background1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .orchard-content {
@@ -540,17 +411,21 @@ font-weight: 600;
 .orchard-info h3 {
     font-size: 1.8rem;
     margin-bottom: 1rem;
-    color: #388e3c;
-}
-
-.orchard-info ul {
-    list-style: none;
-    margin: 1.5rem 0;
+    color: #ff5722; /* 改为鲜艳的橙色 */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3); /* 添加文字阴影增强可读性 */
 }
 
 .orchard-info li {
     padding: 0.5rem 0;
     font-size: 1.1rem;
+    color: #333; /* 改为深灰色增强对比度 */
+    font-weight: 600; /* 加粗字体 */
+}
+
+.farmer-message h4 {
+    color: #d32f2f; /* 改为鲜艳的红色 */
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
 }
 
 .farmer-message {
@@ -581,6 +456,14 @@ font-weight: 600;
     background: #388e3c;
 }
 
+/* 生长过程时间线 */
+.growth-section {
+    background: url('pineapple2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 
 .growth-timeline {
     max-width: 800px;
@@ -590,7 +473,7 @@ font-weight: 600;
 .timeline-item {
     display: flex;
     margin-bottom: 2rem;
-    align-items: center;
+align-items: center;
 }
 
 .timeline-date {
@@ -604,12 +487,20 @@ font-weight: 600;
     margin-right: 2rem;
 }
 
+.timeline-content h4 {
+    color: #1976d2; /* 改为鲜艳的蓝色 */
+    margin-bottom: 0.5rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
 .timeline-content {
     background: white;
     padding: 1.5rem;
     border-radius: 10px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.1);
     flex: 1;
+    color: #222; /* 改为更深的黑色 */
+    font-weight: 500; /* 中等加粗 */
 }
 
 .timeline-content h4 {
@@ -617,6 +508,10 @@ font-weight: 600;
     margin-bottom: 0.5rem;
 }
 
+/* 产品信息 */
+.product-section {
+    background: white;
+}
 
 .product-grid {
     display: grid;
@@ -652,10 +547,13 @@ font-weight: 600;
     font-size: 1.1rem;
 }
 
-/* 生长过程时间线 */
-.growth-section {
-    /* 删除这行：background: #f1f8e9; */
-    min-height: 600px; /* 添加最小高度确保背景图显示 */
+/* 团队介绍 */
+.team-section {
+    background: url('background2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .team-content {
@@ -666,14 +564,22 @@ font-weight: 600;
 
 .team-info h3 {
     font-size: 2rem;
-    color: #2e7d32;
+    color: #7b1fa2; /* 改为鲜艳的紫色 */
     margin-bottom: 1rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
 }
 
 .team-info p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
-    opacity: 0.8;
+    color: #444; /* 改为深灰色 */
+    font-weight: 500; /* 中等加粗 */
+}
+
+.member h4 {
+    color: #c2185b; /* 改为鲜艳的粉红色 */
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
 }
 
 .team-members {
@@ -695,11 +601,17 @@ font-weight: 600;
     margin-bottom: 1rem;
 }
 
+/* 页脚 */
+.footer {
+    background: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+
 /* 图片展示区域样式 */
 .gallery-section {
-    /* 删除这行：background: #fff8e1; */
-    background: #fff8e1; /* 删除这行 */
-    min-height: 500px; /* 添加最小高度确保背景图显示 */
+    background: #fff8e1;
 }
 
 .gallery-controls {
@@ -813,7 +725,6 @@ font-weight: 600;
     flex: 1;
     margin-bottom: 1rem;
 }
-
 .gallery-actions {
     display: flex;
     gap: 0.5rem;
@@ -889,7 +800,7 @@ font-weight: 600;
     color: #666;
     font-size: 1.1rem;
     min-width: 150px;
-    text-align: center;
+text-align: center;
 }
 
 /* 无图片时的提示样式 */
@@ -1372,4 +1283,309 @@ font-weight: 600;
         color: black;
         text-shadow: none;
     }
+}
+
+/* 认养一颗凤梨树模块样式 */
+.adopt-section {
+    background: linear-gradient(135deg, #ff9800, #ff5722, #ff9800);
+    background-size: 200% 200%;
+    animation: gradientShift 6s ease infinite;
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    padding: 100px 0;
+    margin: 0;
+    border: none;
+}
+
+.adopt-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 20% 30%, rgba(255,255,255,0.1) 2px, transparent 2px),
+        radial-gradient(circle at 80% 70%, rgba(255,255,255,0.08) 1px, transparent 1px);
+    background-size: 50px 50px, 30px 30px;
+    animation: floatBackground 20s linear infinite;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes floatBackground {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(50px, 25px); }
+}
+
+.adopt-section .section-title {
+    color: white;
+    font-size: 3.2rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    display: inline-block;
+    font-weight: 700;
+    text-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    letter-spacing: 1px;
+}
+
+.adopt-section .section-title::before {
+    content: '🍍';
+    font-size: 4rem;
+    position: absolute;
+    left: -80px;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: pineappleBounce 3s ease-in-out infinite;
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
+}
+
+.adopt-section .section-title::after {
+    content: '🍍';
+    font-size: 4rem;
+    position: absolute;
+    right: -80px;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: pineappleBounce 3s ease-in-out infinite 1.5s;
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
+}
+
+@keyframes pineappleBounce {
+    0%, 100% { 
+        transform: translateY(-50%) scale(1) rotate(0deg);
+    }
+    25% { 
+        transform: translateY(-60%) scale(1.1) rotate(5deg);
+    }
+    50% { 
+        transform: translateY(-50%) scale(1.05) rotate(-5deg);
+    }
+    75% { 
+        transform: translateY(-55%) scale(1.08) rotate(3deg);
+    }
+}
+
+.adopt-content {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    padding: 0 2rem;
+}
+
+.adopt-content p {
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+    opacity: 0.95;
+    line-height: 1.7;
+    font-weight: 300;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    background: rgba(255,255,255,0.1);
+    padding: 2rem;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+.adopt-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(145deg, #ffffff, #f8f9fa);
+    color: #ff5722;
+    text-decoration: none;
+    padding: 22px 50px;
+    border-radius: 60px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 
+        0 10px 30px rgba(255, 87, 34, 0.4),
+        0 4px 15px rgba(255, 255, 255, 0.3) inset;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid rgba(255, 255, 255, 0.8);
+    letter-spacing: 0.5px;
+}
+
+.adopt-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.6), transparent);
+    transition: left 0.8s;
+}
+
+.adopt-link::after {
+    content: '🌱';
+    margin-left: 12px;
+    font-size: 1.8rem;
+    transition: all 0.4s ease;
+}
+
+.adopt-link:hover {
+    transform: translateY(-8px) scale(1.08);
+    box-shadow: 
+        0 20px 40px rgba(255, 87, 34, 0.6),
+        0 6px 20px rgba(255, 255, 255, 0.4) inset;
+    background: linear-gradient(145deg, #f8f9fa, #ffffff);
+    color: #e64a19;
+}
+
+.adopt-link:hover::before {
+    left: 100%;
+}
+
+.adopt-link:hover::after {
+    transform: scale(1.3) rotate(15deg);
+    margin-left: 15px;
+}
+
+/* 装饰元素样式 */
+.adopt-decoration {
+    position: absolute;
+    font-size: 2.5rem;
+    opacity: 0.15;
+    animation: float 8s ease-in-out infinite;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.adopt-decoration:nth-child(1) {
+    top: 15%;
+    left: 8%;
+    animation-delay: 0s;
+}
+
+.adopt-decoration:nth-child(2) {
+    top: 65%;
+    right: 12%;
+    animation-delay: 2s;
+}
+
+.adopt-decoration:nth-child(3) {
+    bottom: 25%;
+    left: 15%;
+    animation-delay: 4s;
+}
+
+.adopt-decoration:nth-child(4) {
+    top: 40%;
+    right: 8%;
+    animation-delay: 6s;
+}
+
+@keyframes float {
+    0%, 100% { 
+        transform: translateY(0px) rotate(0deg) scale(1);
+        opacity: 0.15;
+    }
+    33% { 
+        transform: translateY(-25px) rotate(120deg) scale(1.1);
+        opacity: 0.2;
+    }
+    66% { 
+        transform: translateY(15px) rotate(240deg) scale(0.9);
+        opacity: 0.1;
+    }
+}
+
+/* 响应式设计 */
+@media (max-width: 1200px) {
+    .adopt-section {
+        padding: 80px 0;
+    }
+    
+    .adopt-section .section-title {
+        font-size: 2.8rem;
+    }
+    
+    .adopt-section .section-title::before,
+    .adopt-section .section-title::after {
+        font-size: 3.5rem;
+        left: -70px;
+        right: -70px;
+    }
+}
+
+@media (max-width: 768px) {
+    .adopt-section {
+        padding: 60px 0;
+    }
+    
+    .adopt-section .section-title {
+        font-size: 2.2rem;
+    }
+    
+    .adopt-section .section-title::before,
+    .adopt-section .section-title::after {
+        font-size: 2.8rem;
+        left: -50px;
+        right: -50px;
+    }
+    
+    .adopt-content p {
+        font-size: 1.3rem;
+        padding: 1.5rem;
+        margin: 0 1rem 2rem;
+    }
+    
+    .adopt-link {
+        padding: 18px 35px;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .adopt-section {
+        padding: 50px 0;
+    }
+    
+    .adopt-section .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .adopt-section .section-title::before,
+    .adopt-section .section-title::after {
+        font-size: 2.2rem;
+        left: -35px;
+        right: -35px;
+    }
+    
+    .adopt-content p {
+        font-size: 1.1rem;
+        padding: 1rem;
+        margin: 0 0.5rem 1.5rem;
+    }
+    
+    .adopt-link {
+        padding: 15px 30px;
+        font-size: 1rem;
+    }
+}
+
+/* 页脚样式 */
+.footer {
+    background: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+    margin: 0;
+    border: none;
+}
+
+.footer p {
+    margin: 0.5rem 0;
+    opacity: 0.9;
+    font-size: 1rem;
 }
